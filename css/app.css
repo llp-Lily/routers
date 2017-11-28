@@ -1,0 +1,95 @@
+body,ul,li{
+    padding: 0;margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+.Nav{
+    width: 100%;height: 44px;position: fixed;top: 0;
+    left:0;
+    background: #ccc;display: flex;justify-content: space-around;align-items: center;z-index: 1;
+}
+.active{
+    color: red;
+}
+.HomeCon{
+    width: 100%;
+    height: 100vh;
+    position: absolute;top: 44px;left: 0;
+}
+.HomeCon img{
+    position: absolute;top: 0;left: 0;bottom: 0;right: 0;
+    margin: auto;
+}
+.v-enter{
+    transform: translate(-100%,0);
+}
+.v-leave-to{
+    transform: translate(100%,0);
+}
+.v-enter-active,.v-leave-active{
+    transition: 1s ease;
+}
+
+.opacity-enter{
+    opacity: 0;
+}
+.opacity-leave-to{
+    opacity: 0;
+}
+.opacity-enter-active,.opacity-leave-active{
+    transition: 1s ease;
+}
+
+.aa-enter{
+    opacity: 0;
+}
+.aa-leave-to{
+    opacity: 0;
+}
+.aa-enter-active,.aa-leave-active{
+    transition: 1s ease;
+}
+
+*{
+    box-sizing: border-box;
+}
+.Doc{
+    width:100vw;
+    height:100vh;
+    padding-top:44px;
+    position: absolute;
+    left:0;top:0;
+}
+.left{
+
+    height:100%;
+    width:20vw;
+    border-right: 1px solid #ccc;
+    float:left;
+    overflow: scroll;
+}
+.left li{
+    padding-left: 10px;
+}
+.right{
+
+    height:100%;
+    width:80vw;
+    float:left;
+    overflow: scroll;
+}
+.son{
+    margin-left:20px;
+}
+.floor{
+    height:300px;
+}
+
+.info{
+    position: relative;
+}
+.logout{
+    position: absolute;
+    right:0;
+    top:20px;
+}
